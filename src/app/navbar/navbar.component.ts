@@ -15,5 +15,5 @@ export class NavbarComponent {
   search() {
     this.pokemonService.setSearchTerm(this.searchTerm);
     this.router.navigate(['/search']);
-  }
+  } 
 }

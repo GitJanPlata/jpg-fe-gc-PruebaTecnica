@@ -13,7 +13,7 @@ export class PokemonsComponent implements OnInit {
   constructor(private pokemonService: PokemonService) { }
 
   ngOnInit(): void {
-    this.pokemonService.getPokemons(10000, 0).subscribe(response => {
+    this.pokemonService.getPokemons().subscribe(response => {
       let pokemonData = response.results;
       pokemonData.sort(() => Math.random() - 0.5); // Desordenamos el array para tener pokemons aleatorios
       pokemonData = pokemonData.slice(0, 8); // Nos quedamos con los primeros 8

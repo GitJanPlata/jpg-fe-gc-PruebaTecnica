@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, Subject } from 'rxjs';
 
 export interface Pokemon {
+  id: number; 
   name: string;
   sprites: {
     front_default: string;
@@ -30,8 +31,8 @@ export class PokemonService {
 
   constructor(private http: HttpClient) { }
 
-  getPokemons(limit: number, offset: number): Observable<any> {
-    return this.http.get(`${this.baseUrl}/pokemon?limit=${limit}&offset=${offset}`);
+  getPokemons(): Observable<any> {
+    return this.http.get(`${this.baseUrl}/pokemon?limit=500`);
   }
 
   getPokemonDetails(name: string): Observable<Pokemon> {
