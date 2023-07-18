@@ -21,6 +21,8 @@ export class SearchComponent implements OnInit {
 
   filterResults() {
     this.pokemonService.getPokemonList().subscribe((data: any) => {
+      console.log(data); // Agrega esta línea para imprimir el resultado en la consola
+
       if (data && data.results) {
         const filteredResults = data.results.filter((pokemon: Pokemon) =>
           pokemon.name.toLowerCase().includes(this.searchTerm.toLowerCase())
