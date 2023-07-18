@@ -12,6 +12,10 @@ export class PokemonDetailComponent implements OnInit {
 
   constructor(private route: ActivatedRoute, private pokemonService: PokemonService) { }
 
+  /*
+    Método que se ejecuta al inicializar el componente.
+    Obtiene el id del Pokémon de la ruta actual y obtiene sus detalles utilizando el PokemonService.
+  */
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id');
     
