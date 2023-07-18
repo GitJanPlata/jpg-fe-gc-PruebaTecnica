@@ -63,10 +63,12 @@ Vista:
 
 ![image](https://github.com/GitJanPlata/jpg-fe-gc-PruebaTecnica/assets/96839905/035f774e-b6f3-4887-a387-7374b176326d)
 
-### 6. search
+### 7. search
 Componente que permite hacer busquedas de pokemons por su nombre.
 
 Lógica:
+
+![image](https://github.com/GitJanPlata/jpg-fe-gc-PruebaTecnica/assets/96839905/c4bc5ae9-09be-4d6e-a14c-419d7a5032b4)
 
 Vista:
 
