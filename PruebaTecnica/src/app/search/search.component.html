@@ -1,0 +1,16 @@
+<div class="container">
+    <h2>Search Results</h2>
+    <div class="row">
+      <div class="col-md-4" *ngFor="let pokemon of searchResults">
+        <div class="card">
+          <img class="card-img-top" [src]="pokemon?.sprites?.front_default" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">{{ pokemon.name }}</h5>
+            <div class="d-flex justify-content-center">
+              <a [routerLink]="['/pokemon', pokemon.name]" class="btn btn-primary">See more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

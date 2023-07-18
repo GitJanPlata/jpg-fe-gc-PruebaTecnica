@@ -1,0 +1,15 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3" *ngFor="let pokemon of pokemons">
+      <div class="card mx-auto">
+        <img class="card-img-top" [src]="pokemon.sprites.front_default" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{ pokemon.name }}</h5>
+          <div class="d-flex justify-content-center">
+            <a [routerLink]="['/pokemon', pokemon.id]" class="btn btn-primary">See more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

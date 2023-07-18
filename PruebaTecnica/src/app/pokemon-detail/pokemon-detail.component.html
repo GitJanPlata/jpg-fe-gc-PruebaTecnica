@@ -1,0 +1,23 @@
+<div class="d-flex justify-content-center align-items-center detalles">
+  <div class="card">
+    <div class="card-body">
+      <div *ngIf="pokemon">
+        <h2>{{ pokemon.name }}</h2>
+        <div class="text-center">
+          <img [src]="pokemon.sprites.front_default" alt="{{ pokemon.name }}" width="300">
+        </div>
+        <p><b>Height</b>: {{ pokemon.height }}</p>
+        <p><b>Weight</b>: {{ pokemon.weight }} kg</p>
+        <p><b>Base exp</b>: {{ pokemon.base_experience }}</p>
+        <h3>Moves:</h3>
+        <ul>
+          <li *ngFor="let ability of pokemon.abilities">{{ ability.ability.name }}</li>
+        </ul>
+        <h3>Type:</h3>
+        <ul>
+          <li *ngFor="let type of pokemon.types">{{ type.type.name }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

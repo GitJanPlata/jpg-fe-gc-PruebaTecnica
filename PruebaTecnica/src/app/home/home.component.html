@@ -1,0 +1,21 @@
+<div class="container-fluid">
+    <h1 class="text-center">Welcome to Jan's Pokedex!</h1>
+    <section>
+      <h2>
+        This is a sample app that uses the PokeAPI to display information about different Pokémon.
+      </h2>
+      <h3>
+        Explore the details of your favorite Pokémon and discover interesting information about them!
+      </h3>
+    </section>
+    <div class="row">
+        <div class="col-md-3" *ngFor="let pokemon of pokemons">
+          <div class="card mx-auto">
+            <img class="card-img-top" [src]="pokemon.sprites.front_default" alt="{{ pokemon.name }}">
+            <div class="card-body">
+              <h5 class="card-title">{{ pokemon.name }}</h5>
+              <a [routerLink]="['/pokemon', pokemon.name]" class="btn btn-primary">See More</a>
+            </div>
+          </div>
+        </div>
+      </div>
