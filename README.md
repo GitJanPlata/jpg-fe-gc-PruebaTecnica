@@ -23,7 +23,9 @@ Vista:
 ![image](https://github.com/GitJanPlata/jpg-fe-gc-PruebaTecnica/assets/96839905/df44d130-763a-47b6-97fd-471f87125614)
 
 
-### 3. login  
+### ~~3. login~~
+
+No me ha dado tiempo a hacer las vistas de login/registro ni de implementar el fire auth.
 
 ### 4. navbar 
 Componente general de navegación que consta de 3 links a otras vistas y una barra de búsqueda.
@@ -60,8 +62,8 @@ Lógica:
 ![image](https://github.com/GitJanPlata/jpg-fe-gc-PruebaTecnica/assets/96839905/913da581-48cd-4df8-8ac1-23627a1f4ead)
 
 Vista:
+![image](https://github.com/GitJanPlata/jpg-fe-gc-PruebaTecnica/assets/96839905/307ce301-f8ab-4870-8178-169b3129c8c6)
 
-![image](https://github.com/GitJanPlata/jpg-fe-gc-PruebaTecnica/assets/96839905/035f774e-b6f3-4887-a387-7374b176326d)
 
 ### 7. search
 Componente que permite hacer busquedas de pokemons por su nombre.
@@ -90,6 +92,10 @@ He usado el archivo pokemonservice para gestionar las entradas de datos de la AP
 ## Routing
 
 He configurado las rutas del sitio de la siguiente manera:
+
+![image](https://github.com/GitJanPlata/jpg-fe-gc-PruebaTecnica/assets/96839905/2647a03c-ab97-4ccc-b836-1eb8bde02659)
+
+
 
 
 
